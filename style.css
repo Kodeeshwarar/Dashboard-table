@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+:root {
+  --bg-color: #ffffff;
+  --dark-color: #212121;
+  --darklight-color: #464e5f;
+  --grey-light-color: #b5b5c3;
+  --grey-dark-color: #f3f6f9;
+  --btn-prmary: #3699ff;
+  --btn-secondary: #f64e60;
+  --view-btn-bg: #c9f7f5;
+  --view-btn-color: #1bc5bd;
+}
+html {
+  font-size: 62.55%;
+}
+.flow-content * + * {
+  margin-left: 3rem;
+}
+.u-margin-bottom-sm {
+  margin-bottom: 2rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.7;
+  background-color: var(--bg-color);
+  color: var(--darklight-color);
+}
+table {
+  border-collapse: collapse;
+}
+
+.bd-container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+
+.header {
+  padding-block: min(4vh, 5rem);
+  justify-content: space-between;
+  align-items: center;
+}
+.btn {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+  text-transform: capitalize;
+  padding-block: min(2vh, 3rem);
+  padding-inline: min(2vw, 4rem);
+  text-decoration: none;
+}
+.btn:active,
+.btn:hover {
+  filter: brightness(0.7);
+}
+.btn--primary {
+  color: var(--bg-color);
+  background-color: var(--btn-prmary);
+  box-shadow: 0 0 16px 7px #3699ff3d;
+}
+.btn--secondary {
+  color: var(--bg-color);
+  background-color: var(--btn-secondary);
+  box-shadow: 0 0 16px 6px #f64e6036;
+}
+.small-text {
+  color: var(--grey-light-color);
+  font-weight: 500;
+}
+.heading__title {
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.product-table {
+  overflow: hidden;
+}
+.product-table__header {
+  background-color: var(--grey-dark-color);
+}
+.product-table__header-row > th {
+  padding-block: 2rem;
+  padding-inline: 2rem;
+  border-collapse: collapse;
+}
+.w-100 {
+  width: 100%;
+}
+
+.user-info {
+  display: flex;
+  gap: 2rem;
+}
+.user__figure {
+  width: min(5rem, 10rem);
+  background-color: var(--grey-dark-color);
+  border-radius: 5px;
+  aspect-ratio: 1;
+  border-radius: 3px;
+  padding: 1rem;
+}
+.user__photo {
+  display: block;
+  transform: translate(5px, 6px);
+}
+.user__profession {
+  color: var(--grey-light-color);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.product-table__body th {
+  margin-block: 2rem;
+}
+.product-table__body p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.btn--view {
+  color: var(--view-btn-color);
+  background-color: var(--view-btn-bg);
+}
+.icons {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: orange;
+  color: orange;
+}
+.icon {
+  color: rgba(255, 166, 0, 0.233);
+}
+th {
+  white-space: nowrap;
+  text-align: left;
+}
